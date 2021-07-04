@@ -51,7 +51,7 @@ namespace IntroductionToAlgorithm
             assert(size>=0);
             assert(rank<size);
             using IntroductionToAlgorithm::SortAlgorithm::partition;
-            auto partitioned_iter=partition(begin,end,begin+radom_index(0,size-1),compare); //随机划分
+            auto partitioned_iter=partition(begin,end,begin+radom_index((std::ptrdiff_t)0,size-1),compare); //随机划分
             auto distance=std::distance(begin,partitioned_iter);
             if(distance== rank)  //找到了该排位的数
                 return *partitioned_iter;

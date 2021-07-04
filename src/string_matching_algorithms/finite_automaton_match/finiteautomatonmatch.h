@@ -141,7 +141,7 @@ namespace IntroductionToAlgorithm {
                 while(m_iter<M_end)
                 {
                     //*********** 寻找Pk是 (Pq a) 后缀的最大的k ***********
-                    int k=std::min(p_len+1,q+2);
+                    int k=std::min(p_len+1,(std::ptrdiff_t)q+2);
                     do{
                         k--;
                     }

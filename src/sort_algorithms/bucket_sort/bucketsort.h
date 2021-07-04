@@ -45,7 +45,7 @@ namespace IntroductionToAlgorithm
         {
             assert(min_val<max_val);  //确保最小值小于最大值
             typedef typename std::iterator_traits<Iterator>::value_type T; // 迭代器指向对象的值类型
-            std::size_t real_bucket_num=10; //划分10个区间
+            const std::size_t real_bucket_num=10; //划分10个区间
             std::vector<T> buckets[real_bucket_num];
 
             Iterator iter=begin;
